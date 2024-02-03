@@ -1,0 +1,63 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(rgba(255, 0, 0, 0.499), rgba(0, 0, 255, 0.608));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: 5rem;
+  margin: 2%;
+}
+.container {
+  background: url(https://i.postimg.cc/xjsKqk26/Clock.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  border: 5px solid red;
+  border-radius: 50%;
+  min-height: 400px;
+  min-width: 400px;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+}
+
+.clock * {
+  position: absolute;
+  bottom: 50%;
+  transform-origin: bottom;
+  border-radius: 4px;
+}
+.hours {
+  background-color: red;
+  width: 10px;
+  height: 100px;
+}
+.mins {
+  background-color: yellow;
+  height: 120px;
+  width: 5px;
+}
+.secs {
+  background-color: aqua;
+  height: 160px;
+  width: 3px;
+}
